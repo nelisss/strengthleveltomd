@@ -40,6 +40,6 @@ The following options are recognized:
 | ------ | ----------- | --------------- |
 | -h --help | Print help. | - |
 | -f --file | Path to Strength Level CSV file. Default: interactive file picker. | Valid path to CSV file or "interactive" to be prompted with file picker. |
-| -d --directory | Output directory to save .md files to. Default: working directory. | Valid path to folder. Can create one folder, but not recursively. |
+| -d --directory | Output directory to save .md files to. Default: \<working directory>/output. | Valid path to folder. Can create one folder, but not recursively. |
 | -o --frontmatter | Type of frontmatter to add to .md files. Default: "none". | Currently only supports "joplin" or "none". |
 | -m --metric | Whether to kg (true) or lb (false). Default: true. | true/t or false/f |

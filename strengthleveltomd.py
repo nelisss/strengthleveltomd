@@ -12,7 +12,7 @@ options = "hf:d:o:m:"
 long_options = ["help", "file=", "directory=", "frontmatter=", "metric="]
 
 sl_csv_path = "interactive"
-output_dir = os.getcwd()
+output_dir = os.getcwd() + "/output"
 frontmatter = "none"
 metric = True
 
