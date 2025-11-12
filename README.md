@@ -14,7 +14,7 @@ This script allows you to convert a Strength Level CSV export to markdown files,
 
 ```
 cd /path/to/directory
-git clone https://git.nelisss.net/niels/strengthleveltomd.git
+git clone https://github.com/nelisss/strengthleveltomd
 ```
 
 1. Run install.sh to create a virtual environment with the required python packages installed
@@ -50,6 +50,10 @@ The following options are recognized:
 |------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | \-h --help        | Print help.                                                                 | \-                                                                        |
 | \-f --file        | Path to Strength Level CSV file. Default: interactive file picker.          | Valid path to CSV file or "interactive" to be prompted with file picker. |
-| \-d --directory   | Output directory to save .md files to. Default: <working directory>/output. | Valid path to folder. Can create one folder, but not recursively.        |
+| \-d --directory   | Output directory to save .md files to. Default: \<working directory\>/output. | Valid path to folder. Can create one folder, but not recursively.        |
 | \-o --frontmatter | Type of frontmatter to add to .md files. Default: "none".                   | Currently only supports "joplin" or "none".                              |
 | \-m --metric      | Whether to kg (true) or lb (false). Default: true.                          | true/t or false/f                                                        |
+
+### Combine with Garmin
+
+The markdown files resulting from this script can be combined with the output of another script, [garmintomd](https://github.com/nelisss/garmintomd), by using [garminslcombinemd](https://github.com/nelisss/garminslcombinemd).
